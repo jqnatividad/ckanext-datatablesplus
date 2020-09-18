@@ -9,7 +9,7 @@ var run_query = function(params, format) {
   form.submit();
 }
 
-this.ckan.module('datatables_view', function (jQuery) {
+this.ckan.module('datatablesplus_view', function (jQuery) {
   return {
     initialize: function() {
       var datatable = jQuery('#dtprv').DataTable({});
