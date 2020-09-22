@@ -145,11 +145,11 @@ def filtered_download(resource_view_id):
     )
 
 
-datatablesplusplugin.add_url_rule(
+datatablesplus.add_url_rule(
     u'/datatablesplus/ajax/<resource_view_id>', view_func=ajax, methods=[u'POST']
 )
 
-datatablesplusplugin.add_url_rule(
+datatablesplus.add_url_rule(
     u'/datatablesplus/filtered-download/<resource_view_id>',
     view_func=filtered_download, methods=[u'POST']
 )
