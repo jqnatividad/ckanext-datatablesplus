@@ -9,7 +9,7 @@ boolean_validator = toolkit.get_validator(u'boolean_validator')
 ignore_missing = toolkit.get_validator(u'ignore_missing')
 
 
-class DatatablesplusPlugin(p.SingletonPlugin):
+class Datatablesplus(p.SingletonPlugin):
     u'''
     DataTables+ table view plugin
     '''
