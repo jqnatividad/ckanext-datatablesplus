@@ -9,7 +9,7 @@
       data-processing="true"
       data-ajax='{
           "url": "{{ h.url_for(
-            'datatablesplusview.ajax',
+            'datatablesplus.ajax',
             resource_view_id=resource_view.id) }}",
           "type": "POST",
           "data": { "filters": "{{ request.args.get('filters', '')|e }}" }
@@ -46,7 +46,7 @@
     </tbody>
   </table>
   <form id="filtered-datatables-download" method="POST" action="{{ h.url_for(
-                                                                  'datatablesplusview.filtered_download',
+                                                                  'datatablesplus.filtered_download',
                                                                   resource_view_id=resource_view.id) }}">
     <input type="hidden" name="filters" value="{{ request.args.get('filters', '')|e }}" />
   </form>
