@@ -88,7 +88,7 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points='''
         [ckan.plugins]
-        datatablesplus=ckanext.datatablesplus.plugin:Datatablesplus
+        datatablesplus_view=ckanext.datatablesplus.plugin:Datatablesplus
 
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
