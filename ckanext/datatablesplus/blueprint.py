@@ -8,7 +8,7 @@ from six import text_type
 from ckan.common import json
 from ckan.plugins.toolkit import get_action, request, h
 
-datatablesplusplugin = Blueprint(u'datatablesplusplugin', __name__)
+datatablesplus = Blueprint(u'datatablesplus', __name__)
 
 
 def merge_filters(view_filters, user_filters_str):
