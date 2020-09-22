@@ -2,14 +2,14 @@
 
 import ckan.plugins as p
 import ckan.plugins.toolkit as toolkit
-from ckanext.datatablesplusview import blueprint
+from ckanext.datatablesplusplugin import blueprint
 
 default = toolkit.get_validator(u'default')
 boolean_validator = toolkit.get_validator(u'boolean_validator')
 ignore_missing = toolkit.get_validator(u'ignore_missing')
 
 
-class DataTablesPlusView(p.SingletonPlugin):
+class DatatablesplusPlugin(p.SingletonPlugin):
     u'''
     DataTables+ table view plugin
     '''
@@ -20,7 +20,7 @@ class DataTablesPlusView(p.SingletonPlugin):
     # IBlueprint
 
     def get_blueprint(self):
-        return blueprint.datatablesplusview
+        return blueprint.datatablesplusplugin
 
     # IConfigurer
 
@@ -46,7 +46,7 @@ class DataTablesPlusView(p.SingletonPlugin):
 
     def info(self):
         return {
-            u'name': u'datatablesplus_view',
+            u'name': u'datatablesplusplugin',
             u'title': u'DataTable',
             u'filterable': True,
             u'icon': u'table',
