@@ -1,5 +1,6 @@
 main-css:
   output: datapluspreview/%(version)s_main.css
+  filters: cssrewrite
   contents:
     - vendor/DataTables-1.10.21/css/dataTables.bootstrap.css
     - vendor/DataTables-1.10.21/css/jquery.dataTables.css
