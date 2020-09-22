@@ -2,7 +2,7 @@ main-css:
   output: datapluspreview/%(version)s_main.css
   contents:
     - vendor/DataTables-1.10.21/css/dataTables.bootstrap.css
-    - vendor/DataTables-1.10.21/css/dataTables.jquery.ui.css
+    - vendor/DataTables-1.10.21/css/dataTables.jqueryui.css
     - vendor/DataTables-1.10.21/css/jquery.dataTables.css
     - vendor/Buttons-1.6.3/css/buttons.bootstrap.css
     - vendor/ColReorder-1.5.2/css/colReorder.bootstrap.css
