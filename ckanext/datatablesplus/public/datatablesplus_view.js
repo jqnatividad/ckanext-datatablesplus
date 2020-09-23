@@ -10,11 +10,11 @@ var run_query = function(params, format) {
 }
 
 this.ckan.module('datatablesplus_view', function (jQuery) {
-  datatable.searchPanes.rebuildPane()
   return {
     initialize: function() {
       var datatable = jQuery('#dtprv').DataTable({});
 
+      datatable.searchPanes.rebuildPane()
       // Adds download dropdown to buttons menu
       datatable.button().add(2, {
         text: 'Download',
